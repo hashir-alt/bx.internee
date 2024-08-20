@@ -1,0 +1,189 @@
+
+.App {
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  padding-top: 20px;
+  background-color: #444;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+nav {
+  display: flex;
+    flex-wrap: wrap;
+    background-color: #d3d3d3;
+    padding: 10px;
+    justify-content: center;
+    gap: 22px;
+    height: auto;
+    margin-bottom: 11rem;
+    margin-top: 10%;
+}
+
+
+nav button {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px 10px 2px 2px;
+  flex: 1 1 auto;   
+}
+
+nav button:hover {
+  background-color: black;
+  box-shadow: 0 0 0 2px white;
+}
+
+
+.creator-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  margin-top: -8rem;
+}
+
+
+.creator-card {
+  background-color: #444;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.creator-card:hover {
+  box-shadow: 0 0 15px 5px white;
+}
+
+.creator-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.creator-card a {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.heading {
+  margin: 0 auto;
+  font-size: 342%;
+  width: 27%;
+}
+
+
+@media (max-width: 900px) {
+  .App {
+    padding-top: 10px;
+  }
+
+  .heading {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  nav button {
+    padding: 12px 24px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .creator-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .creator-card {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 200%;
+    width: 80%;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  nav button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .creator-list {
+    gap: 2rem;
+  }
+
+  .creator-card {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 150%;
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .creator-list {
+    gap: 1.5rem;
+  }
+
+  .creator-card {
+    width: 180px;
+    height: 270px;
+  }
+}
